@@ -6,7 +6,7 @@
 
     <groupId>com.hans.yang</groupId>
     <artifactId>ssj</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.1</version>
     <packaging>war</packaging>
 
     <repositories>
@@ -50,7 +50,22 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <version>2.1.0.RELEASE</version>
+            <exclusions>
+                <!--因为要打成war包部署，所以要移除内嵌的tomcat模块-->
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
+
+        <!--打成war包部署，此内嵌tomcat是要去掉，但是为了方便本地测试可以在此引入
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <version>2.1.0.RELEASE</version>
+        </dependency>
+        -->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -59,6 +74,13 @@
             <version>2.1.0.RELEASE</version>
         </dependency>
 
+        <!--因为要打成war包形式，所以要添加servelt-api依赖-->
+       <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-servlet-api</artifactId>
+            <version>8.5.11</version>
+            <scope>provided</scope>
+        </dependency>
         <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
