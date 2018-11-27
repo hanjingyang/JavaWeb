@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * Created In Ctrip. <br/>
+ * Created In. <br/>
  *
  * @author: hj_yang <br/>
  * @date: 2018/11/8 <br/>

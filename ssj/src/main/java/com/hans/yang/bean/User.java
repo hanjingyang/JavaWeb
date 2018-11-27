@@ -1,7 +1,7 @@
 package com.hans.yang.bean;
 
 /**
- * Created In Ctrip. <br/>
+ * Created In . <br/>
  *
  * @author: hj_yang <br/>
  * @date: 2018/11/9 <br/>

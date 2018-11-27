@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created In Ctrip. <br/>
+ * Created In . <br/>
  *
  * @author: hj_yang <br/>
  * @date: 2018/11/2 <br/>
