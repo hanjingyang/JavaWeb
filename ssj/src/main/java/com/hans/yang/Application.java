@@ -30,7 +30,7 @@ import org.springframework.context.annotation.Configuration;
 /*如果是要打成war包，需要继承SpringBootServletInitializer 并且重写configure方法*/
 public class Application extends SpringBootServletInitializer {
   public static void main(String[] args) {
-    SpringApplication.run(Application.class,  args);
+    SpringApplication.run(Application.class, args);
   }
 
   @Override
